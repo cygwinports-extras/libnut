@@ -1,0 +1,91 @@
+libnut
+------------------------------------------
+MPlayer/FFmpeg NUT multimedia container library
+
+Runtime requirements:
+  cygwin-1.5.24-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://www.mplayerhq.hu/
+
+Canonical download:
+  svn://svn.mplayerhq.hu/nut
+
+-------------------------------------------
+
+Build instructions:
+  unpack libnut-20070306-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libnut-20070306-X.cygport all
+
+This will create:
+  /usr/src/libnut-20070306-X-src.tar.bz2
+  /usr/src/libnut-20070306-X.tar.bz2
+  /usr/src/libnut-devel-20070306-X.tar.bz2
+  /usr/src/libnut0-20070306-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libnut)
+  /usr/bin/nutindex.exe
+  /usr/bin/nutmerge.exe
+  /usr/share/doc/Cygwin/libnut-20070306.README
+  /usr/share/doc/libnut-20070306/COPYING
+  /usr/share/doc/libnut-20070306/README
+  /usr/share/doc/libnut-20070306/html/License.html
+  /usr/share/doc/libnut-20070306/html/annotated.html
+  /usr/share/doc/libnut-20070306/html/doxygen.css
+  /usr/share/doc/libnut-20070306/html/doxygen.png
+  /usr/share/doc/libnut-20070306/html/functions.html
+  /usr/share/doc/libnut-20070306/html/functions_vars.html
+  /usr/share/doc/libnut-20070306/html/group__common.html
+  /usr/share/doc/libnut-20070306/html/group__demuxer.html
+  /usr/share/doc/libnut-20070306/html/group__muxer.html
+  /usr/share/doc/libnut-20070306/html/index.html
+  /usr/share/doc/libnut-20070306/html/modules.html
+  /usr/share/doc/libnut-20070306/html/pages.html
+  /usr/share/doc/libnut-20070306/html/structnut__alloc__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__demuxer__opts__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__frame__table__input__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__info__field__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__info__packet__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__input__stream__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__muxer__opts__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__output__stream__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__packet__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__stream__header__t.html
+  /usr/share/doc/libnut-20070306/html/structnut__timebase__t.html
+  /usr/share/doc/libnut-20070306/html/tab_b.gif
+  /usr/share/doc/libnut-20070306/html/tab_l.gif
+  /usr/share/doc/libnut-20070306/html/tab_r.gif
+  /usr/share/doc/libnut-20070306/html/tabs.css
+
+(libnut0)
+  /usr/bin/cygnut-0.dll
+
+(libnut-devel)
+  /usr/include/libnut.h
+  /usr/lib/libnut.a
+  /usr/lib/libnut.dll.a
+
+------------------
+
+Port Notes:
+
+----- version 20070306-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
