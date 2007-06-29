@@ -8,7 +8,7 @@ Runtime requirements:
 Build requirements:
   cygwin-1.5.24-2
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.1-1
   gcc-core-3.4.4-3
   make-3.81-1
 
@@ -21,17 +21,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libnut-20070306-X-src.tar.bz2
+  unpack libnut-505-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libnut-20070306-X.cygport all
+  cygport ./libnut-505-X.cygport all
 
 This will create:
-  /usr/src/libnut-20070306-X-src.tar.bz2
-  /usr/src/libnut-20070306-X.tar.bz2
-  /usr/src/libnut-devel-20070306-X.tar.bz2
-  /usr/src/libnut0-20070306-X.tar.bz2
+  /usr/src/libnut-505-X-src.tar.bz2
+  /usr/src/libnut-505-X.tar.bz2
+  /usr/src/libnut-devel-505-X.tar.bz2
+  /usr/src/libnut0-505-X.tar.bz2
 
 -------------------------------------------
 
@@ -40,36 +40,36 @@ Files included in the binary packages:
 (libnut)
   /usr/bin/nutindex.exe
   /usr/bin/nutmerge.exe
-  /usr/share/doc/Cygwin/libnut-20070306.README
-  /usr/share/doc/libnut-20070306/COPYING
-  /usr/share/doc/libnut-20070306/README
-  /usr/share/doc/libnut-20070306/html/License.html
-  /usr/share/doc/libnut-20070306/html/annotated.html
-  /usr/share/doc/libnut-20070306/html/doxygen.css
-  /usr/share/doc/libnut-20070306/html/doxygen.png
-  /usr/share/doc/libnut-20070306/html/functions.html
-  /usr/share/doc/libnut-20070306/html/functions_vars.html
-  /usr/share/doc/libnut-20070306/html/group__common.html
-  /usr/share/doc/libnut-20070306/html/group__demuxer.html
-  /usr/share/doc/libnut-20070306/html/group__muxer.html
-  /usr/share/doc/libnut-20070306/html/index.html
-  /usr/share/doc/libnut-20070306/html/modules.html
-  /usr/share/doc/libnut-20070306/html/pages.html
-  /usr/share/doc/libnut-20070306/html/structnut__alloc__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__demuxer__opts__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__frame__table__input__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__info__field__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__info__packet__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__input__stream__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__muxer__opts__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__output__stream__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__packet__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__stream__header__t.html
-  /usr/share/doc/libnut-20070306/html/structnut__timebase__t.html
-  /usr/share/doc/libnut-20070306/html/tab_b.gif
-  /usr/share/doc/libnut-20070306/html/tab_l.gif
-  /usr/share/doc/libnut-20070306/html/tab_r.gif
-  /usr/share/doc/libnut-20070306/html/tabs.css
+  /usr/share/doc/Cygwin/libnut-505.README
+  /usr/share/doc/libnut-505/COPYING
+  /usr/share/doc/libnut-505/README
+  /usr/share/doc/libnut-505/html/License.html
+  /usr/share/doc/libnut-505/html/annotated.html
+  /usr/share/doc/libnut-505/html/doxygen.css
+  /usr/share/doc/libnut-505/html/doxygen.png
+  /usr/share/doc/libnut-505/html/functions.html
+  /usr/share/doc/libnut-505/html/functions_vars.html
+  /usr/share/doc/libnut-505/html/group__common.html
+  /usr/share/doc/libnut-505/html/group__demuxer.html
+  /usr/share/doc/libnut-505/html/group__muxer.html
+  /usr/share/doc/libnut-505/html/index.html
+  /usr/share/doc/libnut-505/html/modules.html
+  /usr/share/doc/libnut-505/html/pages.html
+  /usr/share/doc/libnut-505/html/structnut__alloc__t.html
+  /usr/share/doc/libnut-505/html/structnut__demuxer__opts__t.html
+  /usr/share/doc/libnut-505/html/structnut__frame__table__input__t.html
+  /usr/share/doc/libnut-505/html/structnut__info__field__t.html
+  /usr/share/doc/libnut-505/html/structnut__info__packet__t.html
+  /usr/share/doc/libnut-505/html/structnut__input__stream__t.html
+  /usr/share/doc/libnut-505/html/structnut__muxer__opts__t.html
+  /usr/share/doc/libnut-505/html/structnut__output__stream__t.html
+  /usr/share/doc/libnut-505/html/structnut__packet__t.html
+  /usr/share/doc/libnut-505/html/structnut__stream__header__t.html
+  /usr/share/doc/libnut-505/html/structnut__timebase__t.html
+  /usr/share/doc/libnut-505/html/tab_b.gif
+  /usr/share/doc/libnut-505/html/tab_l.gif
+  /usr/share/doc/libnut-505/html/tab_r.gif
+  /usr/share/doc/libnut-505/html/tabs.css
 
 (libnut0)
   /usr/bin/cygnut-0.dll
@@ -83,8 +83,11 @@ Files included in the binary packages:
 
 Port Notes:
 
+----- version 505-1 -----
+Update to SVN trunk.
+
 ----- version 20070306-1 -----
-Initial release for Cygwin.
+Initial release for Cygwin (SVN r486).
 
 
 Cygwin port maintained by:
