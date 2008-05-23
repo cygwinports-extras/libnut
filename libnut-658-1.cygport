@@ -1,0 +1,32 @@
+DESCRIPTION="Nut container library"
+HOMEPAGE="http://ffmpeg.mplayerhq.hu/"
+SVN_URI="svn://svn.mplayerhq.hu/nut/src"
+SVN_REV=${PV}
+inherit svn
+
+PKG_NAMES="${PN} ${PN}0 ${PN}-devel"
+PKG_HINTS='setup rt devel'
+PKG_CONTENTS[0]='usr/bin/*.exe usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake all libnut-dll
+
+	if check_prog doxygen
+	then
+		cd ${B}/libnut
+		doxygen
+	fi
+}
+
+src_install() {
+	cd ${B}
+	USE_DESTDIR=0
+	cyginstall install-libnut-dll
+
+	docinto html
+	dodoc libnut/doxygen/html/*
+}

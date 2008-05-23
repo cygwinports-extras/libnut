@@ -1,4 +1,4 @@
 category: Audio Video
-requires: cygwin libnut0
+requires: cygwin
 sdesc: "NUT multimedia container library (utilities)"
 ldesc: "MPlayer/FFmpeg NUT multimedia container format library"
