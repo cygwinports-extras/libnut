@@ -3,34 +3,34 @@ libnut
 MPlayer/FFmpeg NUT multimedia container library
 
 Runtime requirements:
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
 
 Build requirements:
-  binutils-20060817-1
-  cygport-0.3.10-1
+  binutils-20080624-2
+  cygport-0.4.3-1
   gcc-core-3.4.4-3
-  make-3.81-1
+  make-3.81-2
 
 Canonical website:
   http://www.mplayerhq.hu/
 
 Canonical download:
-  svn://svn.mplayerhq.hu/nut
+  svn://svn.mplayerhq.hu/nut/src
 
 -------------------------------------------
 
 Build instructions:
-  unpack libnut-658-X-src.tar.bz2
+  unpack libnut-661-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libnut-658-X.cygport all
+  cygport ./libnut-661-X.cygport all
 
 This will create:
-  /usr/src/libnut-658-X-src.tar.bz2
-  /usr/src/libnut-658-X.tar.bz2
-  /usr/src/libnut-devel-658-X.tar.bz2
-  /usr/src/libnut0-658-X.tar.bz2
+  /usr/src/libnut-661-X-src.tar.bz2
+  /usr/src/libnut-661-X.tar.bz2
+  /usr/src/libnut-devel-661-X.tar.bz2
+  /usr/src/libnut0-661-X.tar.bz2
 
 -------------------------------------------
 
@@ -39,35 +39,8 @@ Files included in the binary packages:
 (libnut)
   /usr/bin/nutindex.exe
   /usr/bin/nutmerge.exe
-  /usr/share/doc/libnut-658/COPYING
-  /usr/share/doc/libnut-658/README
-  /usr/share/doc/libnut-658/html/License.html
-  /usr/share/doc/libnut-658/html/annotated.html
-  /usr/share/doc/libnut-658/html/doxygen.css
-  /usr/share/doc/libnut-658/html/doxygen.png
-  /usr/share/doc/libnut-658/html/functions.html
-  /usr/share/doc/libnut-658/html/functions_vars.html
-  /usr/share/doc/libnut-658/html/group__common.html
-  /usr/share/doc/libnut-658/html/group__demuxer.html
-  /usr/share/doc/libnut-658/html/group__muxer.html
-  /usr/share/doc/libnut-658/html/index.html
-  /usr/share/doc/libnut-658/html/modules.html
-  /usr/share/doc/libnut-658/html/pages.html
-  /usr/share/doc/libnut-658/html/structnut__alloc__t.html
-  /usr/share/doc/libnut-658/html/structnut__demuxer__opts__t.html
-  /usr/share/doc/libnut-658/html/structnut__frame__table__input__t.html
-  /usr/share/doc/libnut-658/html/structnut__info__field__t.html
-  /usr/share/doc/libnut-658/html/structnut__info__packet__t.html
-  /usr/share/doc/libnut-658/html/structnut__input__stream__t.html
-  /usr/share/doc/libnut-658/html/structnut__muxer__opts__t.html
-  /usr/share/doc/libnut-658/html/structnut__output__stream__t.html
-  /usr/share/doc/libnut-658/html/structnut__packet__t.html
-  /usr/share/doc/libnut-658/html/structnut__stream__header__t.html
-  /usr/share/doc/libnut-658/html/structnut__timebase__t.html
-  /usr/share/doc/libnut-658/html/tab_b.gif
-  /usr/share/doc/libnut-658/html/tab_l.gif
-  /usr/share/doc/libnut-658/html/tab_r.gif
-  /usr/share/doc/libnut-658/html/tabs.css
+  /usr/share/doc/libnut-661/COPYING
+  /usr/share/doc/libnut-661/README
 
 (libnut0)
   /usr/bin/cygnut-0.dll
@@ -80,6 +53,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 661-1 -----
+Updated SVN snapshot.
 
 ----- version 658-1 -----
 Updated SVN snapshot.
