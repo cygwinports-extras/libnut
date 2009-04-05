@@ -15,7 +15,7 @@ libnut_devel_CONTENTS='usr/include/ usr/lib/'
 src_compile() {
 	lndirs
 	cd ${B}
-	cygmake all libnut-dll
+	cygmake all libnut-dll CC="${CC}"
 
 #	if check_prog doxygen
 #	then

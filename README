@@ -3,12 +3,13 @@ libnut
 MPlayer/FFmpeg NUT multimedia container library
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
 
 Build requirements:
   binutils-20080624-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
   make-3.81-2
 
 Canonical website:
@@ -39,8 +40,9 @@ Files included in the binary packages:
 (libnut)
   /usr/bin/nutindex.exe
   /usr/bin/nutmerge.exe
-  /usr/share/doc/libnut-661/COPYING
-  /usr/share/doc/libnut-661/README
+  /usr/bin/nutparse.exe
+  /usr/share/doc/libnut/COPYING
+  /usr/share/doc/libnut/README
 
 (libnut0)
   /usr/bin/cygnut-0.dll
@@ -54,17 +56,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 661-1 -----
-Updated SVN snapshot.
-
------ version 658-1 -----
-Updated SVN snapshot.
-
------ version 505-1 -----
-Update to SVN trunk.
-
------ version 20070306-1 -----
-Initial release for Cygwin (SVN r486).
+----- version 661-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
