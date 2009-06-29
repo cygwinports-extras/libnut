@@ -1,5 +1,5 @@
 category: Audio Video
-requires: cygwin libgcc1
+requires: libgcc1
 external-source: libnut
 sdesc: "NUT multimedia container library (runtime)"
 ldesc: "MPlayer/FFmpeg NUT multimedia container format library"
