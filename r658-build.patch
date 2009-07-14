@@ -14,7 +14,7 @@
  	$(CC) $(CFLAGS) -shared $^ -o $@
  
 +libnut/cygnut-0.dll: $(LIBNUT_OBJS)
-+	${CC} ${CFLAGS} -shared -Wl,--enable-auto-image-base,--out-implib,libnut/libnut.dll.a $^ -o $@
++	${CC} ${CFLAGS} ${LDFLAGS} -shared -Wl,--enable-auto-image-base,--out-implib,libnut/libnut.dll.a $^ -o $@
 +
  $(LIBNUT_OBJS): libnut/priv.h libnut/libnut.h
  

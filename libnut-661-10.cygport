@@ -29,6 +29,8 @@ src_install() {
 	USE_DESTDIR=0
 	cyginstall install-libnut-dll
 
+	# coreutils .exe handling
+	strip ${D}/usr/bin/*
 #	docinto html
 #	dodoc libnut/doxygen/html/*
 }
